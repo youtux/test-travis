@@ -8,5 +8,5 @@ Tests for `test_travis` module.
 import test_travis
 
 
-test_sayhello():
+def test_sayhello():
     assert test_travis.sayhello('Gaetano') == "Hello Gaetano!"

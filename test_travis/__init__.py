@@ -31,4 +31,4 @@ __email__ = 'youtux@example.com'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2015 Alessio Bogon'
 
-from something import sayhello
+from .something import sayhello
