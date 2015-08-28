@@ -23,7 +23,7 @@ __title__ = 'test-travis'
 __summary__ = 'Vanguard contains all the boilerplate you need to bootstrap a modern Python package.'
 __uri__ = 'https://github.com/youtux/test-travis'
 
-__version__ = '1.0.0'
+__version__ = '1.1.0-beta'
 
 __author__ = 'Alessio Bogon'
 __email__ = 'youtux@example.com'
