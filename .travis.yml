@@ -1,20 +1,18 @@
-# config file for automatic testing at travis-ci.org
 language: python
-
 python:
-    - "3.4"
-    - "3.3"
-    - "2.7"
-
-install:
-    pip install tox-travis
-
-script:
-    # command to run tests and collect test coverage
-    tox
-
+- '3.4'
+- '3.3'
+- '2.7'
+install: pip install tox-travis
+script: tox
 notifications:
-    email: false
-
-after_success:
-    coveralls
+  email: false
+after_success: coveralls
+deploy:
+  provider: pypi
+  user: youtux
+  password:
+    secure: K93TZlnwG03tLNVlUCYLd5S8SW/MPg+wV3K3kZ63WYZl7oRE8/1hp3XM9NfyZ/BTuJ6xWLgzJaOgeYHg0KAoKlWobramsayrl9YnLUKDCIDgczgPxxd4XohXbBcunpEplUOF6+ZLc3ZAUK4tzH0bZecEZqKRDQig1QR5NeYXu1p8ElE1LDWxKYPVQQCF4sAddmLFuvEwe7Jtl0k+5A/N0n/+hca7z2mb0TX40+wobfVO2qq5EEK2MrFI9HS8goCWc6MwEK74xqgF/e+Jay8fkpekxzhiDAymYCmLXS4BtuY3ZXCG87lu8OGpS0GHw3RIcc9zFfKn1KmqCQeEQ7CNYV6sKmcikWKUV3zc90d1NXvxuSfaWcafiENZRggai5Lmk4sORG8HQ/cpDXNH/yKDFYF3hs52ZovZ+p9JymqnlCHPTJc3wENaSaMSWZsxNrlgJm6cudZAcrwR2Np9RMIDzsAtgFqEIBlKN4t1GL6iaPfGORaO2SlLRkBMvYseTWqBueeiGO5whu4OvIYbtNt7tIegLSFZIOV8Ud2+byYeDWU/aD/rHc4VLjbLDcd5z0GNFBzl8JI2NSV2DlyRFnILqcrKvEIxnFzt85XC1p+5miyrZ9AZe+/SwhzyBH/Ziv4w0l9d0wzQHzRPKdFW3VeRiuyu/Bays3c2OG8hh7hLOTE=
+  on:
+    tags: true
+    repo: youtux/test-travis
