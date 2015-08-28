@@ -1,0 +1,6 @@
+---
+site_name: Travis-ci pypi test Docs
+repo_url: https://github.com/youtux/test-travis
+dev_addr: "0.0.0.0:4000"
+theme: bootstrap
+docs_dir: docs
