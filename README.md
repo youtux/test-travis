@@ -24,8 +24,8 @@ Anyone can help make this project better - read [CONTRIBUTING](CONTRIBUTING.md) 
 MIT. See the [LICENSE](LICENSE) file for more details.
 
 
-[fury-url]: http://badge.fury.io/py/test-travis
-[fury-image]: https://badge.fury.io/py/test-travis.png
+[fury-url]: http://badge.fury.io/py/youtux.test-travis
+[fury-image]: https://badge.fury.io/py/youtux.test-travis.png
 
 [travis-url]: https://travis-ci.org/youtux/test-travis
-[travis-image]: https://travis-ci.org/youtux/test-travis.png?branch=develop
+[travis-image]: https://travis-ci.org/youtux/test-travis.svg?branch=master
